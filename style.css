@@ -1,0 +1,123 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #5a2d1e; /* Ciemny brąz, styl D&D */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+h1 {
+    margin: 0;
+}
+
+.character-sheet {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+section {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+h2 {
+    color: #5a2d1e;
+    border-bottom: 2px solid #e0b29a;
+    padding-bottom: 10px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.input-group, .ability-score-row {
+    margin-bottom: 15px;
+}
+
+.input-group label, .ability-score-row label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    width: calc(100% - 22px); /* Odjęcie paddingu i borderu */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ważne, żeby padding nie dodawał do szerokości */
+}
+
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.ability-score-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ability-score-row input {
+    width: 60px;
+    text-align: center;
+}
+
+.modifier {
+    font-weight: bold;
+    color: #007bff; /* Niebieski kolor dla modyfikatorów */
+    min-width: 60px; /* Zapewnia stałą szerokość */
+    text-align: center;
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.skill-item input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.skill-modifier {
+    min-width: 40px;
+    text-align: right;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    background-color: #5a2d1e;
+    color: white;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .character-sheet {
+        grid-template-columns: 1fr;
+    }
+}
