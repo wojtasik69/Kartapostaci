@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kreator Karty Postaci D&D 5e</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Kreator Karty Postaci D&D 5e</h1>
+    </header>
+
+    <main class="character-sheet">
+        <section class="basic-info">
+            <h2>Podstawowe Informacje</h2>
+            <div class="input-group">
+                <label for="charName">Imię Postaci:</label>
+                <input type="text" id="charName" placeholder="Np. Aerion Jasnowłosy">
+            </div>
+            <div class="input-group">
+                <label for="charRace">Rasa:</label>
+                <input type="text" id="charRace" placeholder="Np. Elf Wysokiego Rodu">
+            </div>
+            <div class="input-group">
+                <label for="charClass">Klasa:</label>
+                <input type="text" id="charClass" placeholder="Np. Wojownik">
+            </div>
+            <div class="input-group">
+                <label for="charLevel">Poziom:</label>
+                <input type="number" id="charLevel" min="1" max="20" value="1">
+            </div>
+            <div class="input-group">
+                <label for="charBackground">Pochodzenie:</label>
+                <input type="text" id="charBackground" placeholder="Np. Żołnierz">
+            </div>
+        </section>
+
+        <section class="abilities">
+            <h2>Cechy</h2>
+            <div class="ability-score-row">
+                <label for="strScore">Siła (STR):</label>
+                <input type="number" id="strScore" min="1" max="30" value="10">
+                <span id="strMod" class="modifier">Mod: +0</span>
+            </div>
+            <div class="ability-score-row">
+                <label for="dexScore">Zręczność (DEX):</label>
+                <input type="number" id="dexScore" min="1" max="30" value="10">
+                <span id="dexMod" class="modifier">Mod: +0</span>
+            </div>
+            <div class="ability-score-row">
+                <label for="conScore">Kondycja (CON):</label>
+                <input type="number" id="conScore" min="1" max="30" value="10">
+                <span id="conMod" class="modifier">Mod: +0</span>
+            </div>
+            <div class="ability-score-row">
+                <label for="intScore">Inteligencja (INT):</label>
+                <input type="number" id="intScore" min="1" max="30" value="10">
+                <span id="intMod" class="modifier">Mod: +0</span>
+            </div>
+            <div class="ability-score-row">
+                <label for="wisScore">Mądrość (WIS):</label>
+                <input type="number" id="wisScore" min="1" max="30" value="10">
+                <span id="wisMod" class="modifier">Mod: +0</span>
+            </div>
+            <div class="ability-score-row">
+                <label for="chaScore">Charyzma (CHA):</label>
+                <input type="number" id="chaScore" min="1" max="30" value="10">
+                <span id="chaMod" class="modifier">Mod: +0</span>
+            </div>
+        </section>
+
+        <section class="combat-info">
+            <h2>Walka</h2>
+            <div class="input-group">
+                <label for="ac">KP (Klasa Pancerza):</label>
+                <input type="number" id="ac" min="0" value="10">
+            </div>
+            <div class="input-group">
+                <label for="hp">Punkty Życia (HP):</label>
+                <input type="number" id="hp" min="0" value="10">
+            </div>
+            <div class="input-group">
+                <label for="initiative">Inicjatywa:</label>
+                <span id="initiative" class="modifier">+0</span>
+            </div>
+            <div class="input-group">
+                <label for="speed">Szybkość (ft):</label>
+                <input type="number" id="speed" min="0" value="30">
+            </div>
+        </section>
+
+        <section class="skills">
+            <h2>Umiejętności</h2>
+            <div id="skills-list">
+                </div>
+        </section>
+
+        <section class="proficiencies">
+            <h2>Biegłości i Języki</h2>
+            <textarea id="proficienciesText" rows="5" placeholder="Np. Biegłość w Zbroi Ciężkiej, Język: Elficki, Wspólny"></textarea>
+        </section>
+
+        <section class="features-traits">
+            <h2>Cechy i Zdolności</h2>
+            <textarea id="featuresTraitsText" rows="10" placeholder="Opisz tutaj cechy rasowe, klasowe, itp."></textarea>
+        </section>
+
+        <section class="equipment">
+            <h2>Ekwipunek</h2>
+            <textarea id="equipmentText" rows="10" placeholder="Wypisz przedmioty, złoto, itp."></textarea>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Kreator Karty Postaci D&D 5e - Stworzone dla społeczności</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
